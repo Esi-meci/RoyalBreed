@@ -10,19 +10,20 @@ import SlideUp from '@/lib/animations/slideUp'
 
 const Pricing = () => {
     return (
-        <section className="lg:pt-15 pt-10 lg:pb-15 pb-10">
-            <div className="container">
-                <div className="flex flex-col justify-center items-center">
-                    <SectionName className={"text-primary-foreground"}>Our Pricing</SectionName>
-                    <Title size={"3.5xl"} className={"mt-2.5 text-center max-w-[516px]"}>Transforming lives through knowledge by education</Title>
-                </div>
-                <div className="lg:pt-15 pt-10">
-                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-7.5 gap-x-7.5 lg:gap-x-0">
-                        {pricingData.map(({ features, id, paln_name, price, is_center }) => <Card key={id} id={id} features={features} plan_name={paln_name} price={price} is_center={is_center} />)}
-                    </div>
-                </div>
-            </div>
-        </section>
+        // <section className="lg:pt-15 pt-10 lg:pb-15 pb-10">
+        //     <div className="container">
+        //         <div className="flex flex-col justify-center items-center">
+        //             <SectionName className={"text-primary-foreground"}>Our Pricing</SectionName>
+        //             <Title size={"3.5xl"} className={"mt-2.5 text-center max-w-[516px]"}>Transforming lives through knowledge by education</Title>
+        //         </div>
+        //         <div className="lg:pt-15 pt-10">
+        //             <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-7.5 gap-x-7.5 lg:gap-x-0">
+        //                 {pricingData.map(({ features, id, paln_name, price, is_center }) => <Card key={id} id={id} features={features} plan_name={paln_name} price={price} is_center={is_center} />)}
+        //             </div>
+        //         </div>
+        //     </div>
+        // </section>
+        <></>
     )
 }
 

@@ -14,7 +14,7 @@ const TopHeader = () => {
                                 <FaPhone /> <Link href={"#"}>(+234) 813-210-3045</Link>
                             </li>
                             <li className='text-cream-foreground flex items-center gap-4'>
-                                <FaEnvelope /> <Link href={"#"}>info@royalbreedschools.com</Link>
+                                <FaEnvelope /><Link href={"#"}>info@royalbreedschools.com</Link>
                             </li>
                             <li className='text-cream-foreground flex items-center gap-4'>
                                 <FaLocationDot /> <span>Plot 6, Ogombo Road, Off Abraham</span>
