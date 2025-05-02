@@ -53,9 +53,9 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                     <div className={`${isAboutpage ? "" : "lg:max-w-[439px]"} pt-7.5`}>
                         <SectionName className='text-red-950'>About Us</SectionName>
                         <Title size={"3.5xl"} className={"pb-5"}>Unlocking Potential, One Child at a just Time in school</Title>
-                        <SectionDescription>Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet
-                            massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
-                            lectus mi ultricies dictum</SectionDescription>
+                        <SectionDescription>we take the time to understand each learner’s strengths, interests, and needs. 
+                            Through personalized attention, caring guidance, and a nurturing environment, 
+                            we help every pupil discover their potential and grow with confidenc</SectionDescription>
                         <div className='lg:mt-10 mt-7'>
                             <Button asChild variant="outline">
                                 <Link href="/about-us">Get a quote</Link>

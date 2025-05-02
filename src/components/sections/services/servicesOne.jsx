@@ -24,9 +24,9 @@ const ServicesOne = () => {
             <div className="container">
                 <div className="relative after:absolute after:right-0 after:top-0 after:lg:bg-warm after:bg-transparent after:w-[calc(100%-279px)] after:h-[calc(100%-120px)] after:rounded-[10px] after:z-[-1]">
                     <div className="flex lg:flex-row flex-col justify-between lg:items-center">
-                        <div className="flex-shrink-0 flex-grow-0 basis-auto lg:w-[30%]">
+                        <div className="flex-shrink-0 flex-grow-0 basis-auto lg:w-[25%]">
                             <SectionName>Latest Service</SectionName>
-                            <Title size={"3.5xl"}>Building a Str Foundation for Success</Title>
+                            <Title size={"3.5xl"}>Building a Strong Foundation for Success</Title>
                         </div>
                         <div className="flex-shrink-0 flex-grow-0 basis-auto lg:w-[50%]">
                             <SectionDescription>Lorem ipsum dolor sit amet consectetur adipiscing elit platea pharetra, nostra mattis hendrerit proin mollis pretium facilisi in, ligula volutpat </SectionDescription>
