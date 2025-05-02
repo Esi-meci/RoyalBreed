@@ -19,7 +19,7 @@ const NewsletterOne = () => {
                         </div>
                         <div className="lg:max-w-[530px] order-0 lg:order-1">
                             <SectionName className={'text-muted-foreground'}>Get Connected</SectionName>
-                            <Title size={"3.5xl"}>Education That Sparks Imaginat Nurturing Curiosity Inspire</Title>
+                            <Title size={"3.5xl"}>Subscribe To our Newsletter and keep in touch</Title>
                             <div className="relative lg:mt-10 mt-5">
                                 <Input type={"email"} placeholder="Enter Your Email" />
                                 <Button className="absolute right-[10px] top-1/2 -translate-y-1/2 text-cream-foreground">Submit  <FaArrowRight /></Button>

@@ -16,9 +16,9 @@ const Testimonial = () => {
                 <div className="flex lg:flex-row flex-col justify-between lg:items-center gap-4 lg:pb-15 pb-10">
                     <div className="lg:max-w-[410px]">
                         <SectionName>Clients Testimonial</SectionName>
-                        <Title size={"3.5xl"}>Unlocking the Power of  Wonderworks Child</Title>
+                        <Title size={"3.5xl"}>Voices of Trust from Satisfied Parents & Guardians</Title>
                     </div>
-                    <p className="lg:max-w-[410px]">Use receiving accounts a number a currencies and get paid like a local Use receivin accounts a number paid the most beautiful think</p>
+                    <p className="lg:max-w-[410px]">Our clients are full of joy and appreciation for the care, growth, and excellence their children experience with us every day, the smiles and heartfelt words from parents and guardians speak volumes.</p>
                 </div>
                 <div className="relative w-full h-full after:absolute after:left-0 after:top-0 after:lg:max-w-[calc(100%-410px)] after:md:max-w-[calc(100%-310px)] after:max-w-[calc(100%-100px)] after:w-full after:h-full after:bg-testimonial-banner after:bg-cover after:bg-no-repeat after:z-[-1]">
                     <div className="py-10">

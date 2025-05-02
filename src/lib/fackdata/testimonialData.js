@@ -6,7 +6,7 @@ export const testimonialData = [
     {
         id:1,
         src:user_1,
-        name:"Shakib Al Hasan",
+        name:"James Sam",
         position:"Marketing Manager",
         review:"Their product exceeded his my routi  expectations. The the quality and attention to detail a the a most outstanding and it has become an essential most a education the man who can do ",
         rating:5

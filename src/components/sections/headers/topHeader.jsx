@@ -11,13 +11,13 @@ const TopHeader = () => {
                     <div>
                         <ul className="flex gap-7.5">
                             <li className='text-cream-foreground flex items-center gap-4'>
-                                <FaPhone /> <Link href={"#"}>(629) 555-0129</Link>
+                                <FaPhone /> <Link href={"#"}>(+234) 813-210-3045</Link>
                             </li>
                             <li className='text-cream-foreground flex items-center gap-4'>
-                                <FaEnvelope /> <Link href={"#"}>info@example.com</Link>
+                                <FaEnvelope /> <Link href={"#"}>info@royalbreedschools.com</Link>
                             </li>
                             <li className='text-cream-foreground flex items-center gap-4'>
-                                <FaLocationDot /> <span>6391 Elgin St. Celina, 10299</span>
+                                <FaLocationDot /> <span>Plot 6, Ogombo Road, Off Abraham</span>
                             </li>
                         </ul>
                     </div>
