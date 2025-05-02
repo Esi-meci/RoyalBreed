@@ -31,8 +31,8 @@ const HeaderOne = () => {
                                         <div className="ml-16 cursor-pointer" onClick={() => setIsSerchActive(true)}>
                                             <FaMagnifyingGlass className='text-xl' />
                                         </div>
-                                        <Button asChild variant="ghost" className="sm:flex hidden">
-                                            <Link href={"/contact-us"}> Get A Quote <FaArrowRight /></Link>
+                                        <Button asChild variant="ghost" className="sm:flex hidden bg-[#e28d43]">
+                                            <Link href={"https://phsps.com/royalbreed/"}>Student Portal<FaArrowRight /></Link>
                                         </Button>
 
                                         <div className="flex xl:hidden flex-col items-end cursor-pointer transition-all duration-500" onClick={() => setIsMobleMenuActive(true)}>
@@ -41,7 +41,6 @@ const HeaderOne = () => {
                                             <span className="block h-[3px] w-5 bg-muted mt-2"></span>
                                         </div>
                                     </div>
-
                                     <SearchForm isSerchActive={isSerchActive} setIsSerchActive={setIsSerchActive} />
                                 </div>
                             </div>

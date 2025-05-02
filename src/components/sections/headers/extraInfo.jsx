@@ -20,7 +20,7 @@ const ExtraInfo = () => {
                 </ul>
             </div>
             <div className="mt-5 mb-6">
-                <a href="" className="bg-primary text-cream-foreground rounded-md sm:flex hidden items-center gap-2.5  btn after:bg-green"> Student Portal <span><i className="fa-solid fa-arrow-right"></i></span> </a>
+                <a href="" className="bg-primary p-6 text-cream-foreground rounded-md sm:flex items-center gap-2.5  btn after:bg-green"> Student Portal <span><i className="fa-solid fa-arrow-right"></i></span> </a>
             </div>
             <SocalIcons className={"w-11 h-11 bg-white text-muted-foreground"} />
         </div>

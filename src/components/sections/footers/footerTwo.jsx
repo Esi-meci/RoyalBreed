@@ -11,81 +11,50 @@ import Image from 'next/image'
 
 const FooterTwo = () => {
     return (
-        <footer className="pt-20 bg-[#0A6375] relative">
+        <footer className="pt-20 relative">
             <div className="container">
-                <div className="grid lg:grid-cols-[300px_auto_auto_268px] sm:grid-cols-2 grid-cols-1 gap-x-7.5 gap-y-10 justify-between">
-
+                <div className="grid lg:grid-cols-[370px_auto_auto] sm:grid-cols-2 grid-cols-1 justify-between gap-7.5">
                     <SlideUp delay={2}>
-                        <Logo className="text-cream-foreground" />
-                        <div className="mt-10">
-                            <p className=" text-cream-foreground opacity-80">Yes, there are many notable ma corporate the a  od businesses Informati worldwide</p>
-                            <SocalIcons prentClass={"gap-5 lg:pt-7.5 pt-5"} className={"w-9 h-9 bg-[#FFFFFF1A] border-none hover:bg-green"} />
-                        </div>
+                        <Logo />
+                        <p className="pt-4">At Royal Breed International School, we pride ourselves on delivering exceptional education tailored to unlock the unique potential in every child.</p>
+                        <SocalIcons prentClass={"gap-5 pt-7.5"} className={"w-9 h-9 bg-warm text-muted-foreground hover:text-cream-foreground hover:bg-green"} />
                     </SlideUp>
 
                     <SlideUp delay={3}>
-                        <div className="inline-block">
-                            <h3 className="text-2xl font-semibold text-cream-foreground inline-block">Pages</h3>
-                            <span className="block w-[130%] h-[1px] mt-2 bg-background relative after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-background after:h-1.5 after:w-1.5 after:rounded-full"></span>
-                        </div>
-                        <ul className="flex flex-col lg:gap-[15px] gap-2.5 lg:pt-7.5 pt-5 min-w-[215px]">
-                            <li><Link href="/about-us" className="text-cream-foreground transition-all duration-500 hover:ml-[5px] hover:text-primary-foreground">About Us</Link></li>
-                            <li><Link href="/services" className="text-cream-foreground transition-all duration-500 hover:ml-[5px] hover:text-primary-foreground">Latest Service</Link></li>
-                            <li><Link href="/blog" className="text-cream-foreground transition-all duration-500 hover:ml-[5px] hover:text-primary-foreground">Latest Blog And News</Link></li>
-                            <li><Link href="/faq" className="text-cream-foreground transition-all duration-500 hover:ml-[5px] hover:text-primary-foreground">FAQ</Link></li>
-                            <li><Link href="#" className="text-cream-foreground transition-all duration-500 hover:ml-[5px] hover:text-primary-foreground">Our Creative Team Member</Link></li>
+                        <h3 className="text-2xl font-semibold">Pages</h3>
+                        <ul className="flex flex-col gap-[15px] pt-5 min-w-[215px]">
+                            <li><Link href="/about-us" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary">About Us</Link></li>
+                            <li><Link href="/services" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary">Latest Service</Link></li>
+                            <li><Link href="/blog" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary">Latest Blog And News</Link></li>
+                            <li><Link href="/faq" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary">FAQ</Link></li>
+                            <li><Link href="#" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary">Our Creative Team Member</Link></li>
                         </ul>
                     </SlideUp>
 
                     <SlideUp delay={4}>
-                        <div className="inline-block">
-                            <h3 className="text-2xl font-semibold text-cream-foreground">Contact</h3>
-                            <span className="block w-[130%] h-[1px] mt-2 bg-background relative after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-background after:h-1.5 after:w-1.5 after:rounded-full"></span>
-                        </div>
-
-                        <ul className="flex flex-col lg:gap-[15px] gap-2.5 lg:pt-7.5 pt-5">
-                            <li className="text-cream-foreground flex gap-4">
-                                <FaLocationDot className='mt-1.5' /> <span className="max-w-[168px]">1179 KFC Road, Lisbon, Portugal</span>
+                        <h3 className="text-2xl font-semibold">Contact</h3>
+                        <ul className="flex flex-col gap-[15px] pt-5">
+                            <li>
+                                <p className="text-[#686868] flex items-center gap-4">
+                                    <span className="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"><FaLocationDot /></span> <span className="max-w-[168px]">Plot 6, Ogombo Road, Off Abraham Adesanya Roundabout, Ajah, Lagos</span>
+                                </p>
                             </li>
-                            <li className="text-cream-foreground flex gap-4">
-                                <FaEnvelope className='mt-1.5' /> <Link href="#">sakib23@gmail.com</Link>
+                            <li>
+                                <p className="text-[#686868] flex items-center gap-4">
+                                    <span className="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"><FaEnvelope /></span> <Link href='mailto:info@royalbreedschools.com'>info@royalbreedschools.com</Link>
+                                </p>
                             </li>
-                            <li className="text-cream-foreground flex gap-4">
-                                <FaPhone className='mt-1.5' /> <Link href="#">012547892354</Link>
+                            <li>
+                                <p className="text-[#686868] flex items-center gap-4">
+                                    <span className="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"><FaPhone /></span> <Link href="tel:+2348132103045">+234(0)8132103045</Link>
+                                </p>
                             </li>
                         </ul>
                     </SlideUp>
-
-                    <SlideUp delay={5}>
-                        <div className="inline-block">
-                            <h3 className="text-2xl font-semibold text-cream-foreground inline-block">Our Newsletter</h3>
-                            <span className="block w-[120%] h-[1px] mt-2 bg-background relative after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:bg-background after:h-1.5 after:w-1.5 after:rounded-full"></span>
-                        </div>
-                        <div className="lg:pt-7.5 pt-5">
-                            <p className="text-cream-foreground">Subscribe our newsletter to get our latest update</p>
-                            <form action="#" className="lg:mt-7.5 mt-5">
-                                <div className="relative overflow-hidden">
-                                    <Input type={"email"} placeholder={"Enter Your Email"} className={"rounded-md bg-[#FFFFFF1A] text-cream-foreground placeholder:text-cream-foreground max-h-15 border-none"} />
-                                    <button type="submit" className="absolute z-20 h-full right-0 top-1/2 -translate-y-1/2 py-5 px-7.5 bg-primary text-cream-foreground rounded-tr-md rounded-br-md">
-                                        <FaArrowRight />
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </SlideUp>
-                    {/* <!-- Newsletter end --> */}
                 </div>
-                <CopyRight color={"text-cream-foreground opacity-80"} />
+                <CopyRight />
             </div>
             <ScrollUp />
-            <div>
-                <div className="absolute right-[68px] top-[40%] animate-up-down">
-                    <Image src={'/images/shapes/apple.svg'} width={99} height={99} alt="img" />
-                </div>
-                <div className="absolute left-[45%] lg:top-1/2 top-[40%]">
-                    <Image src={'/images/shapes/scissors.svg'} width={77} height={77} alt="img" />
-                </div>
-            </div>
         </footer>
     )
 }
