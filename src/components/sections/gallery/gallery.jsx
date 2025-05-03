@@ -51,7 +51,7 @@ const Gallery = () => {
                         {
                             categoryList.map(({ data_target, id, label }) => {
                                 return (
-                                    <li key={id} onClick={() => setActiveTab(data_target)} className={`px-5 py-2.5 text-xl font-700 border border-[#F2F2F2] rounded-[10px] font-jost cursor-pointer hover:bg-primary hover:text-cream-foreground transition-all duration-500 ${activeTab === data_target ? "bg-primary text-cream-foreground" : ""}`}>
+                                    <li key={id} onClick={() => setActiveTab(data_target)} className={`px-5 py-2.5 text-xl font-700 border border-[#5a1413] rounded-[10px] font-jost cursor-pointer hover:bg-primary hover:text-cream-foreground transition-all duration-500 ${activeTab === data_target ? "bg-primary text-cream-foreground" : ""}`}>
                                         {label}
                                     </li>
                                 )

@@ -13,7 +13,7 @@ const CopyRight = ({ color }) => {
                 <ul className="flex items-center gap-7.5 wow fadeInRight" data-wow-delay=".3s">
                     <li><Link href="#" className={cn(``, color)}>Trams & Condition</Link></li>
                     <li><Link href="#" className={cn(``, color)}>Privacy Policy</Link></li>
-                    <li><Link href="#" className={cn(``, color)}>Contact Us</Link></li>
+                    {/* <li><Link href="#" className={cn(``, color)}>Contact Us</Link></li> */}
                 </ul>
             </div>
         </div>

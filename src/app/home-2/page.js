@@ -11,6 +11,7 @@ import Pricing from '@/components/sections/pricing'
 import Products from '@/components/sections/products'
 import AgeTwo from '@/components/sections/studentsAge/ageTwo'
 import SuccessProjectTwo from '@/components/sections/successProjects/successProjectTwo'
+import ServicesTwo from '@/components/sections/services/servicesTwo'
 
 export const metadata = {
     title: "Ascent - Chindcare & Kids School Next.js Template || Home Two",
@@ -24,6 +25,7 @@ const HomeTwo = () => {
             <main>
                 <HeroTwo />
                 <AboutTwo />
+                <ServicesTwo/>
                 <SuccessProjectTwo />
                 <ExtraCurricular />
                 <Partner />

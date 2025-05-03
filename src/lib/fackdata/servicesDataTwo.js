@@ -27,14 +27,14 @@ export const servicesDataTwo = [
     {
         id:5,
         icon:"mat",
-        service_name:"Edu Connect",
-        service_details:"Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat",
+        service_name:"Confidence Built Through Daily Wins",
+        service_details:"Every small achievement empowers our students to believe in themselves and aim higher.",
     },
     {
         id:6,
         icon:"baby-body",
-        service_name:"Knowledge Hub",
-        service_details:"Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat",
+        service_name:"Learning With Purpose and Joy",
+        service_details:"Our teaching approach blends joy with intention, inspiring curiosity and active discovery.",
     },
 
 ]

@@ -142,7 +142,9 @@
 
   /* ------- card hover image slide up end -------- */
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 /* service swiper pagination */
 .services .swiper-pagination-bullets.swiper-pagination-horizontal {

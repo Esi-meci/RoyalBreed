@@ -4,6 +4,7 @@ import NewsletterTwo from '@/components/sections/newsletters/newsletterTwo'
 import PageTitle from '@/components/sections/pageTitle'
 import Pricing from '@/components/sections/pricing'
 import Testimonial from '@/components/sections/testimonial'
+import AboutThree from '@/components/sections/abouts/aboutthree'
 
 export const metadata = {
     title: "RoyalBreed International School",
@@ -14,7 +15,8 @@ const AboutUs = () => {
     return (
         <main>
             <PageTitle pageName={"About Us"} breadcrumbCurrent={"About Us"} />
-            <AboutOne gridClass={"lg:grid-cols-2"} isAboutpage={true} />
+            {/* <AboutOne gridClass={"lg:grid-cols-2"} isAboutpage={true} /> */}
+            <AboutThree></AboutThree>
             <Pricing />
             <Testimonial />
             <NewsletterTwo />

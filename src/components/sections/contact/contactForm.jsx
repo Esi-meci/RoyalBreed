@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { FaEnvelope, FaLocationDot, FaPaperPlane, FaPhone } from 'react-icons/fa6'
+import { FaEnvelope, FaLocationDot, FaPaperPlane, FaPhone, FaPen } from 'react-icons/fa6'
 
 import Input from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -13,7 +13,7 @@ const ContactForm = () => {
             <div className="container">
                 <div className="max-w-[546px] mx-auto text-center">
                     <SectionName>Contact</SectionName>
-                    <Title size={"3.5xl"}>Unlock your potential with education</Title>
+                    <Title size={"3.5xl"}>Unlock thier potential with education</Title>
                 </div>
                 <div className="mt-15">
                     <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-7.5">
@@ -43,12 +43,16 @@ const ContactForm = () => {
                                     <div className="grid sm:grid-cols-2 grid-cols-1 gap-7.5">
                                         <div className="relative">
                                             <Input type={"text"} placeholder={"Your Name"} id="name" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} />
-                                            <label htmlFor="name" className="absolute right-5 top-1/2 -translate-y-1/2"> <FaPaperPlane /></label>
+                                            <label htmlFor="name" className="absolute right-5 top-1/2 -translate-y-1/2"> <FaPen /></label>
                                         </div>
                                         <div className="relative">
                                             <Input type={"email"} placeholder={"Your Email"} id="email" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} />
-                                            <label htmlFor="email" className="absolute right-5 top-1/2 -translate-y-1/2"><FaPhone /></label>
+                                            <label htmlFor="email" className="absolute right-5 top-1/2 -translate-y-1/2"> <FaEnvelope /></label>
                                         </div>
+                                    </div>
+                                    <div className="relative mt-5">
+                                        <Input type={"text"} placeholder={"Your Phone Number"} id="number" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} />
+                                        <label htmlFor="number" className="absolute right-5 top-1/2 -translate-y-1/2"> <FaPhone /></label>
                                     </div>
                                     <div className="relative mt-5">
                                         <Input type={"text"} placeholder={"Your Address"} id="address" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} />
@@ -57,16 +61,16 @@ const ContactForm = () => {
 
                                     <div className="relative mt-5">
                                         <textarea name="message" id="message" placeholder="Write your Message here" className="w-full min-h-36 rounded-[10px] border-2 text-[#686868] placeholder:[#686868] border-[#F2F2F2] px-5 py-[15px] outline-none"></textarea>
-                                        <label htmlFor="address" className="absolute right-5 top-[15px]"> <FaEnvelope /></label>
+                                        <label htmlFor="address" className="absolute right-5 top-[15px]"> </label>
                                     </div>
-                                    <Button variant="pill" className="w-full bg-primary border-primary hover:text-primary-foreground lg:mt-10 mt-5">Send Now</Button>
+                                    <Button variant="pill" className="w-full bg-primary border-primary hover:text-primary-foreground lg:mt-10 mt-5">Send Now<FaPaperPlane /></Button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </div >
+        </section >
     )
 }
 

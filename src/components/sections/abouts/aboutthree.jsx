@@ -9,7 +9,7 @@ import SlideUp from '@/lib/animations/slideUp'
 import SectionDescription from '@/components/ui/sectionDescription'
 import { cn } from '@/lib/utils'
 
-const AboutOne = ({ gridClass, isAboutpage }) => {
+const AboutThree = ({ gridClass, isAboutpage }) => {
     // 'gridClass' and 'isAboutpage' props come frome about-us and home-1 page
     return (
         <section className="lg:pt-15 pt-10 lg:pb-15 pb-10">
@@ -52,10 +52,14 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                     {/* <!-- right side start --> */}
                     <div className={`${isAboutpage ? "" : "lg:max-w-[439px]"} pt-7.5`}>
                         <SectionName className='text-red-950'>About Us</SectionName>
-                        <Title size={"3.5xl"} className={"pb-5"}>Unlocking Potential, One Child at a just Time in school</Title>
-                        <SectionDescription>we take the time to understand each learner’s strengths, interests, and needs. 
-                            Through personalized attention, caring guidance, and a nurturing environment, 
-                            we help every pupil discover their potential and grow with confidenc</SectionDescription>
+                        <Title size={"3.5xl"} className={"pb-5"}>Royal Breed
+                            International School</Title>
+                        <SectionDescription>RBIS is an innovative, diverse and forward thinking learning community comprising of a Creche,
+                            Toddlers Community, Preschool and Junior School. The School was established to enhance the qualitative education
+                            and all round development of children as well as to maximize their learning experiences – from early childhood through
+                            the elementary years to adolescence. we take the time to understand each learner’s strengths, interests, and needs.
+                            Through personalized attention, caring guidance, and a nurturing environment,
+                            we help every pupil discover their potential and grow with confidence</SectionDescription>
                         <div className='lg:mt-10 mt-7'>
                             <Button asChild variant="outline" className='border-[#5a1413]'>
                                 <Link href="/about-us">Get a quote</Link>
@@ -65,9 +69,15 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                     </div>
                     {/* <!-- right side end --> */}
                 </div>
+            {/* <p>We adopt a broad and balanced curriculum that promotes the spiritual, moral, social, 
+                cognitive and physical development of children. The Toddlers community and Preschool use a unique blend of the Montessori 
+                and Early Years Foundation Stage curricular while the Junior school runs with a rich blend of the British and Nigerian curricular. 
+                Our curriculum embeds the effective use of technology enabling the acquisition of skills in computer coding, robotics, movie making, 
+                animation and digital citizenship – 
+                indispensable skills for success and leadership in a globalized, connected and emerging world of the future.</p> */}
             </div>
         </section>
     )
 }
 
-export default AboutOne
+export default AboutThree

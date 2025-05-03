@@ -17,7 +17,7 @@ const NewsletterTwo = () => {
                         <div className="lg:max-w-[573px] max-w-[400px]">
                             <SectionName className={"text-muted-foreground"}>Stay With Us</SectionName>
                             <Title size={"3.5xl"} className={"mt-2.5 max-w-[410px]"}>The path to success starts with education</Title>
-                            <SectionDescription className={"mt-5"}>Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat.</SectionDescription>
+                            <SectionDescription className={"mt-5"}>At RBIS, we believe every child is full of potential, and the best way to help them grow is through learning. Our classrooms are filled with fun, friendship, and discovery — where every lesson brings new excitement</SectionDescription>
                             <div className="mt-9">
                                 <Button variant="pill" className="bg-primary border-primary hover:text-primary-foreground" asChild>
                                     <Link href={"/about-us"} className="btn-rounded-full">Read More</Link>
