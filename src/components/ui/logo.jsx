@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 const Logo = ({ className }) => {
   return (
-    <Link href="/" className="flex items-center gap-1">
-      <img src={'/images/logo.png'} width={40} height={40} alt="img" />
-      <span className={cn("font-bold text-3xl", className)}>Royal<span className='text-[#e28d43]'>Breed</span></span>
+    <Link href="/" className="flex items-center gap-0 logo">
+      <img src={'/images/logo.png'} className='lg:w-20 lg:h-20 w-14 h-14' alt="img" />
+      <span className={cn("font-bold text-3xl -mx-3 pt-3 royal", className)}>Royal<span className='breed'>Breed</span></span>
     </Link>
   )
 }
