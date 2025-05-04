@@ -1,4 +1,6 @@
+'use client'
 import React from 'react'
+import { useState } from 'react';
 import Image from 'next/image'
 import { FaEnvelope, FaLocationDot, FaPaperPlane, FaPhone, FaPen } from 'react-icons/fa6'
 
@@ -8,6 +10,47 @@ import SectionName from '@/components/ui/sectionName'
 import Title from '@/components/ui/title'
 
 const ContactForm = () => {
+
+    const [formData, setFormData] = useState({
+        name: 'james',
+        email: 'mark@gmail.com',
+        phone: '09090240674',
+        address: 'farville',
+        message: 'through',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log("Submitting form...", formData);
+
+        const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        })
+        //     });
+        //     console.log(res.json().message)
+
+
+        //     const result = await res.json();
+        //     alert(result.message);
+        //   };
+        if (res.ok) { // Check if the response status is successful (status code 200-299)
+            const data = await res.json(); // Parse the JSON response
+            console.log(data); // Do something with the parsed data
+        } else {
+            console.error('Error:', res.statusText); // Handle any error response
+        }
+    }
+
     return (
         <section className="lg:pt-15 lg;pb-15 pb-10 pt-10">
             <div className="container">
@@ -39,31 +82,35 @@ const ContactForm = () => {
                         <div>
                             <div className="bg-background shadow-[0px_5px_60px_0px_rgba(0,0,0,0.05)] rounded-[10px] lg:p-10 p-5">
                                 <h3 className="text-[28px] font-bold leading-[148%] font-nunito">Send a message</h3>
-                                <form action="#" className="mt-7">
+                                {/* <form action="" onSubmit={handleSubmit} className="mt-7"> */}
+                                    <form action="https://formsubmit.co/1esimeci@gmail.com" method='POST' className="mt-7">
                                     <div className="grid sm:grid-cols-2 grid-cols-1 gap-7.5">
                                         <div className="relative">
-                                            <Input type={"text"} placeholder={"Your Name"} id="name" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} />
+                                            <Input type={"name"} onChange={handleChange} placeholder={"Your Name"} name="name" id="name" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} required />
                                             <label htmlFor="name" className="absolute right-5 top-1/2 -translate-y-1/2"> <FaPen /></label>
                                         </div>
                                         <div className="relative">
-                                            <Input type={"email"} placeholder={"Your Email"} id="email" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} />
+                                            <Input type={"email"} onChange={handleChange} placeholder={"Your Email"} name='email' id="email" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} />
                                             <label htmlFor="email" className="absolute right-5 top-1/2 -translate-y-1/2"> <FaEnvelope /></label>
                                         </div>
                                     </div>
                                     <div className="relative mt-5">
-                                        <Input type={"text"} placeholder={"Your Phone Number"} id="number" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} />
+                                        <Input type={"tel"} onChange={handleChange} placeholder={"Your Phone Number"} name="phone" id="number" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} />
                                         <label htmlFor="number" className="absolute right-5 top-1/2 -translate-y-1/2"> <FaPhone /></label>
                                     </div>
                                     <div className="relative mt-5">
-                                        <Input type={"text"} placeholder={"Your Address"} id="address" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} />
+                                        <Input type={"address"} name='address' onChange={handleChange} placeholder={"Your Address"} id="address" className={"text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5"} />
                                         <label htmlFor="address" className="absolute right-5 top-1/2 -translate-y-1/2"> <FaLocationDot /></label>
                                     </div>
 
                                     <div className="relative mt-5">
-                                        <textarea name="message" id="message" placeholder="Write your Message here" className="w-full min-h-36 rounded-[10px] border-2 text-[#686868] placeholder:[#686868] border-[#F2F2F2] px-5 py-[15px] outline-none"></textarea>
+                                        <textarea name="message" onChange={handleChange} id="message" placeholder="Write your Message here" className="w-full min-h-36 rounded-[10px] border-2 text-[#686868] placeholder:[#686868] border-[#F2F2F2] px-5 py-[15px] outline-none"></textarea>
                                         <label htmlFor="address" className="absolute right-5 top-[15px]"> </label>
                                     </div>
-                                    <Button variant="pill" className="w-full bg-primary border-primary hover:text-primary-foreground lg:mt-10 mt-5">Send Now<FaPaperPlane /></Button>
+                                    <input type="hidden" name="_subject" value="New message from your site!" />
+                                    <input type="hidden" name="_captcha" value="false" />
+                                    <input type="hidden" name="_next" value="http://localhost:3000/contact-us" />
+                                    <Button variant="pill" type='submit' className="w-full bg-primary border-primary hover:text-primary-foreground lg:mt-10 mt-5">Send Now<FaPaperPlane /></Button>
                                 </form>
                             </div>
                         </div>
